@@ -1,0 +1,12 @@
+@import "bourbon";
+
+//@include font-face("Fregat", "../fonts/FregatBoldItalic/Fregat_bold_italic", 700 , italic , $file-formats: eot woff ttf svg);
+
+//font-family: 'Open Sans';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+
+@include font-face("Tahoma", "../fonts/Tahoma/TahomaRegular/TahomaRegular", 400 , $file-formats: eot woff ttf otf svg);
+
+@include font-face("Tahoma", "../fonts/Tahoma/TahomaBold/TahomaBold", 700 , $file-formats: eot woff ttf svg);
+
+@include font-face("Nautilus", "../fonts/Nautilus/NautilusRegular/NautilusRegular", 400 , italic , $file-formats: eot woff ttf svg);

@@ -1,0 +1,524 @@
+@import "bourbon";
+@import "vars.scss";
+
+
+@media only screen and (max-width: 1230px) {
+  .main-mnu {
+    margin-left: 8px;
+    li {
+      a {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .main__content__right {
+    padding-left: 9px;
+  }
+  .filtr {
+    width: 880px;
+    margin-left: 0;
+  }
+  .arki-content {
+    width: 880px;
+  }
+  .arki-content__proiz {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1207px) {
+  .box-bg__top__left {
+    display: none;
+  }
+  .box-bg__top__right {
+    display: block;
+    margin: 0 auto;
+  }
+  .box-bg {
+    border: none;
+    padding-bottom: 50px;
+  }
+  .main-mnu {
+    margin-top: -6px;
+    width: 285px;
+  }
+  .header__top {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__clock {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1185px) {
+  .main__content__right {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .main-mnu {
+    overflow: scroll;
+    height: 785px;
+    top: 0;
+    left: 0;
+    background-color: #e3d5d5;
+    margin-left: 0;
+    li {
+      a {
+        margin: 5px 0;
+      }
+    }
+  }
+  .gamburger {
+    display: block;
+    span {
+      transition: .4s all;
+    }
+    &.active {
+      span:first-child {
+        transform: rotate(45deg) translateX(6px) translateY(6px);
+      }
+      span:nth-child(2) {
+        transform: rotate(-45deg) translateX(-1px) translateY(0px);
+      }
+      span:last-child {
+        opacity: 0;
+      }
+    }
+  }
+  .mnu-adaptive {
+    position: fixed;
+    top: 100px;
+    left: -285px;
+    transition: .4s all;
+    z-index: 2;
+    &.active {
+      left: 0;
+    }
+  }
+  .dveri-block-overall {
+    width: auto;
+  }
+  .dveri-overall {
+    width: auto;
+    padding: 0 110px;
+  }
+  .dveri-type__item {
+    margin: 12px 12px;
+  }
+  .dveri-cover__item {
+    margin: 13px 13px;
+  }
+  .another-block__item {
+    margin: 13px 11px;
+  }
+  .another-block__text{
+    h4{
+      margin-top: 10px;
+    }
+  }
+  .hit-overall {
+    margin: 25px auto;
+  }
+  .dveri-sliders {
+    width: auto;
+  }
+  .dveri-sliders__1-next {
+    right: 0;
+  }
+  .footer__block1{
+    text-align: left;
+  }
+  footer{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer__block2{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  .contacts{
+    h2{
+      width: auto;
+      height: auto;
+      margin-top: 0;
+      padding-left: 0;
+      padding-bottom: 5px;
+      &:after{
+        width: 100%;
+      }
+    }
+  }
+  .contacts__info{
+    margin-left: 0;
+    p{
+      margin-left: 0;
+      margin-bottom: 10px;
+      span{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    h6{
+      margin-left: 0;
+      margin-top: 18px;
+    }
+    iframe{
+      margin-left: 0;
+    }
+  }
+  .contacts__slider {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contacts_mod{
+    &:after{
+      width: 100%;
+      left: 0;
+    }
+  }
+  .bread-crumbs {
+    margin-left: 0;
+  }
+  .arki-content {
+    width: auto;
+    p{
+      width: auto;
+      padding: 0 85px;
+    }
+  }
+  .filtr {
+    width: 100%;
+    text-align: center;
+    h2{
+      padding-left: 0;
+    }
+    i{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .arki-content{
+    h3{
+      margin-bottom: 20px;
+    }
+  }
+  .arki-content__block {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .arki-content__items {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 732px;
+  }
+  .arki-content__proiz__item {
+    margin: 20px 30px;
+  }
+  .arki-sliders__1{
+    .dveri-sliders__1-prev{
+      left: 0;
+    }
+  }
+  .p-margin {
+    width: auto;
+    padding: 0 10px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 1080px){
+  .arki-content__proiz__item {
+    margin: 20px 47px;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .contacts__slider{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .allert, .allert_tell {
+    top: 0;
+  }
+  .field {
+    float: none;
+  }
+  .header__top__med {
+    margin: 0 160px;
+  }
+  header {
+    .header__calls {
+      margin: 9px 0;
+      margin-left: 20px;
+    }
+    .header__basket {
+      margin: 23px 0;
+      margin-left: 35px;
+    }
+    .header__tell {
+      margin: 22px 0;
+      margin-left: 40px;
+    }
+  }
+  .box-bg__top__right {
+    bottom: -114px;
+  }
+  .mnu-adaptive {
+    position: fixed;
+    top: 210px;
+    left: -285px;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+  }
+  .main__content__right {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .box-bg__top__right {
+    display: none;
+  }
+  .main__content__right {
+    margin-top: 180px;
+  }
+  .mnu-adaptive {
+    top: 211px;
+  }
+  .contacts__info{
+    iframe{
+      width: 90%;
+      height: 350px;
+    }
+  }
+  .contacts{
+    h2{
+      &:after{
+        display: none;
+      }
+    }
+  }
+  .arki-content__proiz__item {
+    margin: 20px 63px;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  .main__content__right__item_r{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 830px){
+  footer .header__logo {
+    margin: 35px 0;
+  }
+  .footer__block{
+    display: block;
+    text-align: center;
+  }
+  .footer__block1{
+    margin: 35px 0;
+  }
+  .footer__block2{
+    margin: 0;
+  }
+  .footer__block__para {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .header__top__med {
+    margin: 0 65px;
+  }
+  .arki-content__items {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: auto;
+  }
+  .arki-content__items__item {
+    margin: 14px 8px;
+  }
+}
+
+@media only screen and (max-width: 712px){
+  .dveri-cover__item {
+    margin: 7px 7px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .shopslider-aPrev{
+    left: -35px;
+  }
+  .shopslider-aNext{
+    right: -36px;
+  }
+}
+
+@media only screen and (max-width: 660px){
+  .arki-content__proiz__item {
+    margin: 20px 22px;
+  }
+  .dveri-sliders__item_arka {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .filtr{
+    i{
+      display: none;
+    }
+    a{
+      i{
+        display: inline-block;
+      }
+    }
+    h2{
+      margin: 0 50px;
+    }
+  }
+  .arki-content{
+    p{
+      padding: 0 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__top__med {
+    margin: 0 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    .header__logo {
+      margin: 15px 56px;
+    }
+    .header__tell {
+      margin: 22px 16px;
+    }
+    .header__calls {
+      margin: 9px 55px;
+    }
+    header .header__basket {
+      margin: 23px 17px;
+    }
+    .header__basket {
+      margin: 23px 1px;
+    }
+  }
+  .main__content__right {
+    margin-top: 375px;
+  }
+  .mnu-adaptive {
+    top: 30px;
+  }
+  .dveri-overall {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .shopslider-aPrev{
+    left: 0;
+  }
+  .shopslider-aNext{
+    right: 0;
+  }
+  .filtr{
+    h2{
+      margin: 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px){
+  .arki-sliders__1{
+    .dveri-sliders__1-prev{
+      left: 80px;
+    }
+    .dveri-sliders__1-next{
+      right: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 473px){
+  .dveri-type__item {
+    margin: 8px 12px;
+  }
+  .dveri-overall {
+    padding: 0 12px;
+  }
+  .filtr{
+    h2{
+      font-size: 18px;
+    }
+    a{
+      font-size: 18px;
+      padding: 12px 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .dveri-sliders__1 {
+    width: 275px;
+    margin: 0 auto;
+  }
+  .arki-sliders__1{
+    .dveri-sliders__1-prev{
+      left: 0;
+    }
+    .dveri-sliders__1-next{
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 441px){
+  .arki-content__proiz__item {
+    margin: 12px 22px;
+  }
+}
+
+@media only screen and (max-width: 387px){
+  .arki-content__items__item {
+    margin: 10px 8px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  header {
+    .header__logo {
+      margin: 15px 0;
+    }
+    .header__tell {
+      margin: 22px 0;
+    }
+    .header__calls {
+      margin: 9px 0;
+    }
+    header .header__basket {
+      margin: 23px 0;
+    }
+    .header__basket {
+      margin: 23px 0;
+    }
+  }
+}

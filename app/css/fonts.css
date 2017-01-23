@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
+@font-face {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Tahoma/TahomaRegular/TahomaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma/TahomaRegular/TahomaRegular.woff") format("woff"), url("../fonts/Tahoma/TahomaRegular/TahomaRegular.ttf") format("truetype"), url("../fonts/Tahoma/TahomaRegular/TahomaRegular.svg#Tahoma") format("svg"); }
+
+@font-face {
+  font-family: "Tahoma";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Tahoma/TahomaBold/TahomaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma/TahomaBold/TahomaBold.woff") format("woff"), url("../fonts/Tahoma/TahomaBold/TahomaBold.ttf") format("truetype"), url("../fonts/Tahoma/TahomaBold/TahomaBold.svg#Tahoma") format("svg"); }
+
+@font-face {
+  font-family: "Nautilus";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Nautilus/NautilusRegular/NautilusRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nautilus/NautilusRegular/NautilusRegular.woff") format("woff"), url("../fonts/Nautilus/NautilusRegular/NautilusRegular.ttf") format("truetype"), url("../fonts/Nautilus/NautilusRegular/NautilusRegular.svg#Nautilus") format("svg"); }
