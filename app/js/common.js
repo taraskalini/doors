@@ -484,6 +484,433 @@ $(function() {
         });
     });
 
+    $(document).ready(function() {
+        var furnitSlider = $('#furnitSlider1').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".furnit-slider__1-prev").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToPrevSlide();
+        });
+
+        $(".furnit-slider__1-next").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var furnitSlider = $('#furnitSlider2').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".furnit-slider__2-prev").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToPrevSlide();
+        });
+
+        $(".furnit-slider__2-next").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var furnitSlider = $('#furnitSlider3').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".furnit-slider__3-prev").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToPrevSlide();
+        });
+
+        $(".furnit-slider__3-next").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var furnitSlider = $('#furnitSlider4').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".furnit-slider__4-prev").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToPrevSlide();
+        });
+
+        $(".furnit-slider__4-next").on("click",function(e){
+            e.preventDefault();
+            furnitSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var laminatSlider = $('#laminatSlider1').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".laminat-slider__1-prev").on("click",function(e){
+            e.preventDefault();
+            laminatSlider.goToPrevSlide();
+        });
+
+        $(".laminat-slider__1-next").on("click",function(e){
+            e.preventDefault();
+            laminatSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var laminatSlider = $('#laminatSlider2').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".laminat-slider__2-prev").on("click",function(e){
+            e.preventDefault();
+            laminatSlider.goToPrevSlide();
+        });
+
+        $(".laminat-slider__2-next").on("click",function(e){
+            e.preventDefault();
+            laminatSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var laminatSlider = $('#laminatSlider3').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".laminat-slider__3-prev").on("click",function(e){
+            e.preventDefault();
+            laminatSlider.goToPrevSlide();
+        });
+
+        $(".laminat-slider__3-next").on("click",function(e){
+            e.preventDefault();
+            laminatSlider.goToNextSlide();
+        });
+    });
+
 });
 
 //Форма отправки 2.0

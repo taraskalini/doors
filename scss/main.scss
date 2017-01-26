@@ -819,6 +819,17 @@ footer{
     padding: 16px 28px;
     margin-top: 6px;
     transition: .3s all;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 16px;
+      right: 0;
+      width: 137px;
+      height: 2px;
+      border: 2px dotted #ffffff;
+    }
     &:hover{
       background-color: darken(#e39c99, 5);
     }
@@ -863,6 +874,7 @@ footer{
   margin: 6px 2px;
   transition: .3s all;
   &:hover{
+    text-decoration: underline;
     color: white;
     transform: scale(.9);
   }
@@ -948,9 +960,18 @@ footer{
 .dveri-sliders__item_arka{
   border: 3px solid #dddddd;
   margin: 0 1px;
-  img{
+  .dveri-sliders__item_arka__img{
     margin-top: 30px;
-    width: 100%;
+    height: 187px;
+    position: relative;
+    img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
   }
   h3{
     margin-top: 8px;
@@ -987,7 +1008,300 @@ footer{
 .p-margin{
   width: 850px;
   margin-top: 60px;
+  p{
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  h4{
+    margin: 20px 0;
+  }
+  ul{
+    li{
+      list-style: disc;
+      text-indent: 20px;
+      color: #363636;
+      font-family: Tahoma;
+      font-weight: 400;
+      line-height: 18px;
+      font-size: 15px;
+    }
+  }
 }
+
+.furnit{
+  .filtr{
+    a{
+      &:after{
+        width: 100px;
+      }
+    }
+  }
+}
+
+.furnit__content{
+  width: 904px;
+}
+
+.furnit__content__item{
+  display: inline-block;
+  vertical-align: top;
+  width: 219px;
+  height: 250px;
+  margin: 0 2px;
+  transition: .3s all;
+  &:hover{
+    transform: scale(.9);
+  }
+  &:hover .furnit__content__item_img{
+    border: 7px solid #e39c99;
+  }
+  &:hover .furnit__content__item_img_hover{
+    opacity: 1;
+    visibility: visible;
+  }
+  &:hover .furnit__content__item__text{
+    color: #e39c99;
+    text-decoration: none;
+  }
+}
+
+.furnit__content__item_img{
+  position: relative;
+  width: 219px;
+  height: 193px;
+  border: 7px solid #dddddd;
+  background-color: #ffffff;
+  transition: .3s all;
+  img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.furnit__content__item_img_hover{
+  width: 160px;
+  height: 51px;
+  border-radius: 15px;
+  background-color: #e39c99;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  color: #ffffff;
+  font-family: Tahoma;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 17px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all;
+  span{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 4px;
+    padding-right: 6px;
+  }
+}
+
+.furnit__content__item__text{
+  color: #363636;
+  font-family: Tahoma;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 12px;
+  transition: .3s all;
+}
+
+.furnit__content{
+  h5{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+.news__content__item{
+  width: 861px;
+  height: 207px;
+  margin: 15px 0;
+  .readmore{
+    color: white;
+    background-color: #b73044;
+    float: right;
+    display: block;
+    width: 225px;
+    height: 35px;
+    text-align: center;
+    padding-top: 6px;
+    font-family: 'Tahoma';
+    border-bottom: 3px solid #ac250b;
+    position: relative;
+    transition: .3s all;
+    &:hover{
+      background-color: darken(#b73044, 5);
+      border-color: darken(#ac250b, 5);
+      &:after{
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+    &:active{
+      background-color: darken(#b73044, 10);
+      border-color: darken(#ac250b, 10);
+    }
+    &:after{
+      transition: .3s all;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 19px;
+      background-color: rgba(255, 255, 255, .1);
+    }
+  }
+}
+
+.news__content__item__block-l{
+  width: 225px;
+  height: 165px;
+  float: left;
+  border: 2px solid #969696;
+  position: relative;
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.news__content__item__block-r{
+  width: 636px;
+  height: 165px;
+  float: left;
+  border: 2px solid #c5c5c5;
+  border-left: none;
+  border-right: none;
+}
+
+.news__content__item__block__top{
+  width: 100%;
+  height: 60px;
+  background-color: #f1e6e4;
+  position: relative;
+  h4{
+    color: #8f8486;
+    width: 414px;
+    padding-top: 10px;
+    margin-left: 30px;
+  }
+}
+
+.news__content__item__block__bot{
+  width: 100%;
+  height: 101px;
+  p{
+    font-family: 'Tahoma';
+    color: #333333;
+    width: 531px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+
+.block-data{
+  top: 5px;
+  right: 15px;
+  position: absolute;
+  color: #92c1c2;
+  font-family: 'Tahoma';
+}
+
+.news__content__line{
+  width: 900px;
+  height: 35px;
+  background-color: rgba(146, 123, 111, 0.9);
+  margin-left: -16px;
+}
+
+.news__content__line__block{
+  width: 160px;
+  margin: 0 auto;
+  text-align: center;
+  .news-arrow{
+    width: 22px;
+    height: 35px;
+    position: relative;
+    transition: .3s all;
+    &:hover{
+      background-color: #339b9f;
+    }
+    i{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+  .news-left{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .news-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  ul{
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 0;
+    li{
+      float: left;
+      a{
+        color: #ffffff;
+        font-family: "Tahoma";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 14px;
+        margin: 0 1px;
+      }
+    }
+  }
+}
+
+.megdveri{
+  .filtr{
+    a{
+      &:after{
+        left: 27px;
+        width: 143px;
+      }
+    }
+  }
+}
+
+
 
 
 
