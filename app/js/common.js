@@ -23,6 +23,22 @@ $(function() {
         event.stopPropagation();
     });
 
+
+    var text;
+    $(".filtr__a").on("click",function(event){
+        event.preventDefault();
+        if($(this).hasClass('active')){
+            $(this).find("span").text(text);
+        }else{
+            text = $(this).find("span").text();
+            console.log(text);
+            $(this).find("span").text("Закрыть");
+        }
+        $(this).toggleClass("active");
+        $(".filtr__block").toggleClass("active");
+    });
+
+
     $(document).ready(function() {
         var dveriSlider = $('#dveri-slider1').lightSlider({
             item:4,
@@ -908,6 +924,494 @@ $(function() {
         $(".laminat-slider__3-next").on("click",function(e){
             e.preventDefault();
             laminatSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var peregorodkiSlider = $('#peregorodki-slider1').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".peregorodki-slider__1-prev").on("click",function(e){
+            e.preventDefault();
+            peregorodkiSlider.goToPrevSlide();
+        });
+
+        $(".peregorodki-slider__1-next").on("click",function(e){
+            e.preventDefault();
+            peregorodkiSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var peregorodkiSlider = $('#peregorodki-slider2').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".peregorodki-slider__2-prev").on("click",function(e){
+            e.preventDefault();
+            peregorodkiSlider.goToPrevSlide();
+        });
+
+        $(".peregorodki-slider__2-next").on("click",function(e){
+            e.preventDefault();
+            peregorodkiSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var peregorodkiSlider = $('#peregorodki-slider3').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".peregorodki-slider__3-prev").on("click",function(e){
+            e.preventDefault();
+            peregorodkiSlider.goToPrevSlide();
+        });
+
+        $(".peregorodki-slider__3-next").on("click",function(e){
+            e.preventDefault();
+            peregorodkiSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var metdveriresultSlider = $('#metdveriresult-slider1').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".metdveriresult-slider__1-prev").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToPrevSlide();
+        });
+
+        $(".metdveriresult-slider__1-next").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var metdveriresultSlider = $('#metdveriresult-slider2').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".metdveriresult-slider__2-prev").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToPrevSlide();
+        });
+
+        $(".metdveriresult-slider__2-next").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var metdveriresultSlider = $('#metdveriresult-slider3').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".metdveriresult-slider__3-prev").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToPrevSlide();
+        });
+
+        $(".metdveriresult-slider__3-next").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var metdveriresultSlider = $('#metdveriresult-slider4').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".metdveriresult-slider__4-prev").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToPrevSlide();
+        });
+
+        $(".metdveriresult-slider__4-next").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var metdveriresultSlider = $('#metdveriresult-slider5').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".metdveriresult-slider__5-prev").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToPrevSlide();
+        });
+
+        $(".metdveriresult-slider__5-next").on("click",function(e){
+            e.preventDefault();
+            metdveriresultSlider.goToNextSlide();
         });
     });
 

@@ -31,6 +31,15 @@
     width: 862px;
     margin-left: 0;
   }
+  .filtrdveri__content{
+    text-align: center;
+  }
+  .result__content{
+    width: 880px;
+    .dveri-sliders__item{
+      margin: 18px 10px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1207px) {
@@ -269,6 +278,17 @@
   }
   .news-bg{
     padding-bottom: 15px;
+  }
+  .filtrdveri__content{
+    .dveri-sliders__item{
+      p{
+        padding: 0;
+        padding-top: 5px;
+      }
+    }
+  }
+  .result__content{
+    width: 100%;
   }
 }
 
