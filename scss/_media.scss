@@ -40,6 +40,13 @@
       margin: 18px 10px;
     }
   }
+  .filtr__block {
+    width: 880px;
+    padding: 10px 15px;
+  }
+  .ui-selectmenu-button.ui-button {
+    margin: 2px 0;
+  }
 }
 
 @media only screen and (max-width: 1207px) {
@@ -70,6 +77,9 @@
       padding-left: 0;
       padding-bottom: 30px;
     }
+  }
+  .megper__content {
+    width: 875px;
   }
 }
 
@@ -290,6 +300,16 @@
   .result__content{
     width: 100%;
   }
+  .filtr__block {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .megper__content {
+    width: 100%;
+  }
+  .filtr__block__clrs {
+    margin: 25px auto;
+  }
 }
 
 @media only screen and (max-width: 1080px){
@@ -400,6 +420,18 @@
       float: none;
       margin: 8px auto;
     }
+  }
+  .filtr__block__content__item_mod {
+    float: none;
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+  }
+  .ui-selectmenu-button.ui-button {
+    margin: 7px 5px;
+  }
+  .filtr__block__content__item {
+    margin: 2px -3px;
   }
 }
 
@@ -590,13 +622,13 @@
     h2{
       font-size: 18px;
     }
-    a{
+    .filtr__a{
       font-size: 18px;
       padding: 12px 26px;
     }
   }
   .filtr{
-    a{
+    .filtr__a{
       &:after{
         bottom: 4px;
         left: 21px;
@@ -606,7 +638,7 @@
   }
   .furnit{
     .filtr{
-      a{
+      .filtr__a{
         &:after{
           width: 72px;
         }
@@ -615,7 +647,7 @@
   }
   .megdveri{
     .filtr{
-      a{
+      .filtr__a{
         &:after{
           left: 24px;
           width: 117px;
@@ -672,6 +704,7 @@
   .arki-content__items__item {
     margin: 10px 8px;
   }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -691,5 +724,12 @@
     .header__basket {
       margin: 23px 0;
     }
+  }
+  .filtr__block__clrs {
+    margin: 24px auto;
+  }
+  .filtr__block__clrs {
+    width: 217px;
+    height: 52px;
   }
 }

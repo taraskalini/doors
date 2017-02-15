@@ -23,6 +23,7 @@ $(function() {
         event.stopPropagation();
     });
 
+    $("select").selectmenu()
 
     var text;
     $(".filtr__a").on("click",function(event){
