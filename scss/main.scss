@@ -1391,12 +1391,10 @@ footer{
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.41);
   background-color: #fafbf6;
   position: absolute;
-  top: -8px;
-  right: -948px;
   z-index: 1;
   padding-left: 20px;
   padding-right: 20px;
-  display: none;
+  display: block;
   h6{
     color: #a0c0c2;
     font-family: Tahoma;
@@ -1425,6 +1423,11 @@ footer{
       }
     }
   }
+}
+
+.meg-modal{
+  top: -8px;
+  right: -948px;
 }
 
 .mnu-window__border{
@@ -1584,6 +1587,8 @@ footer{
   border: 1px solid #e39c99;
   background-image: linear-gradient(to top, #fafbf6 0%, #f3f3f2 100%);
   padding: 5px 5px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .filtr__block__clrs__item{
@@ -1680,16 +1685,52 @@ footer{
   line-height: 15px;
   text-transform: uppercase;
   background-image: url(../img/raster/btn-filtr.png);
-  display: block;
+  display: inline-block;
   text-align: center;
   background-repeat: no-repeat;
   padding: 13px 0;
   width: 170px;
   height: 51px;
-  margin: 10px auto;
+  margin: 10px 20px;
 }
 
+.btn-reset{
+  color: #065567;
+  font-family: Tahoma;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
 
+.filtr__block__content-select__block{
+  display: inline-block;
+  vertical-align: top;
+  h6{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 12px 0;
+  }
+}
+
+.filtr__block_btns{
+  width: 390px;
+  margin: 15px auto;
+}
+
+.met-modal{
+  top: 58px;
+  right: -948px;
+}
+
+.btn-margin{
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0;
+}
 
 
 

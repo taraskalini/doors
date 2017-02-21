@@ -310,6 +310,11 @@
   .filtr__block__clrs {
     margin: 25px auto;
   }
+  .filtr__block_laminat{
+    .filtr__block__clrs{
+      margin: 2px auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 1080px){
@@ -433,6 +438,11 @@
   .filtr__block__content__item {
     margin: 2px -3px;
   }
+  .filtr__block_laminat{
+    .filtr__block__clrs{
+      margin: 7px auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 870px){
@@ -471,6 +481,18 @@
   }
   .arki-content__items__item {
     margin: 14px 8px;
+  }
+}
+
+@media only screen and (max-width: 745px){
+  .filtr__block__clrs {
+    display: block;
+  }
+  .btn-filtr{
+    margin: 10px 15px;
+  }
+  .filtr__block_laminat .filtr__block__clrs {
+    margin: 19px auto;
   }
 }
 
@@ -698,6 +720,20 @@
       font-size: 14px;
     }
   }
+  .filtr__block_btns {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .btn-filtr {
+    display: block;
+    margin: 20px auto;
+  }
+  .btn-reset {
+    display: block;
+    margin: 15px 0;
+  }
 }
 
 @media only screen and (max-width: 387px){
@@ -731,5 +767,10 @@
   .filtr__block__clrs {
     width: 217px;
     height: 52px;
+  }
+  .filtr__block__clrs__a {
+    display: block;
+    margin: 2px 0;
+    padding-left: 0;
   }
 }

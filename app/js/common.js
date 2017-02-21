@@ -1416,6 +1416,189 @@ $(function() {
         });
     });
 
+    $(document).ready(function() {
+        var plintusSlider = $('#plintus-slider1').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".plintus-slider__1-prev").on("click",function(e){
+            e.preventDefault();
+            plintusSlider.goToPrevSlide();
+        });
+
+        $(".plintus-slider__1-next").on("click",function(e){
+            e.preventDefault();
+            plintusSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var plintusSlider = $('#plintus-slider2').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".plintus-slider__2-prev").on("click",function(e){
+            e.preventDefault();
+            plintusSlider.goToPrevSlide();
+        });
+
+        $(".plintus-slider__2-next").on("click",function(e){
+            e.preventDefault();
+            plintusSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var plintusSlider = $('#plintus-slider3').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".plintus-slider__3-prev").on("click",function(e){
+            e.preventDefault();
+            plintusSlider.goToPrevSlide();
+        });
+
+        $(".plintus-slider__3-next").on("click",function(e){
+            e.preventDefault();
+            plintusSlider.goToNextSlide();
+        });
+    });
+
 });
 
 //Форма отправки 2.0
