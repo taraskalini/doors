@@ -23,7 +23,14 @@ $(function() {
         event.stopPropagation();
     });
 
-    $("select").selectmenu()
+    $(".filtr select").selectmenu({
+    });
+
+    $(".metkarta select").selectmenu({
+        classes: {
+            "ui-selectmenu-menu": "highlight"
+        }
+    });
 
     var text;
     $(".filtr__a").on("click",function(event){
@@ -1596,6 +1603,224 @@ $(function() {
         $(".plintus-slider__3-next").on("click",function(e){
             e.preventDefault();
             plintusSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var metSlider = $('#met-slider').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 18,
+            pager: false,
+            controls: false,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            responsive : [
+                {
+                    breakpoint:900,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:680,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:500,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".met-slider-Prev1").on("click",function(e){
+            e.preventDefault();
+            metSlider.goToPrevSlide();
+        });
+
+        $(".met-slider-Next1").on("click",function(e){
+            e.preventDefault();
+            metSlider.goToNextSlide();
+        });
+
+    });
+
+    $(document).ready(function() {
+        var metSlider = $('#met-slider2').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 18,
+            pager: false,
+            controls: false,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            responsive : [
+                {
+                    breakpoint:900,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:680,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:500,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".met-slider-Prev2").on("click",function(e){
+            e.preventDefault();
+            metSlider.goToPrevSlide();
+        });
+
+        $(".met-slider-Next2").on("click",function(e){
+            e.preventDefault();
+            metSlider.goToNextSlide();
+        });
+
+    });
+
+    $(document).ready(function() {
+        var metkartaSlider = $('#metkarta-slider1').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".metkarta-slider__1-prev").on("click",function(e){
+            e.preventDefault();
+            metkartaSlider.goToPrevSlide();
+        });
+
+        $(".metkarta-slider__1-next").on("click",function(e){
+            e.preventDefault();
+            metkartaSlider.goToNextSlide();
+        });
+    });
+
+    $(document).ready(function() {
+        var metkartaSlider = $('#metkarta-slider2').lightSlider({
+            item:4,
+            loop:true,
+            slideMove:1,
+            slideMargin: 0,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            controls: false,
+            pager: false,
+            responsive : [
+                {
+                    breakpoint:1185,
+                    settings: {
+                        item:5,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:1060,
+                    settings: {
+                        item:4,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:860,
+                    settings: {
+                        item:3,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:660,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".metkarta-slider__2-prev").on("click",function(e){
+            e.preventDefault();
+            metkartaSlider.goToPrevSlide();
+        });
+
+        $(".metkarta-slider__2-next").on("click",function(e){
+            e.preventDefault();
+            metkartaSlider.goToNextSlide();
         });
     });
 

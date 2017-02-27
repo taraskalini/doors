@@ -477,7 +477,7 @@
 .dveri-sliders__item{
   width: 188px;
   height: 456px;
-  border: 2px solid white;
+  border: 2px solid transparent;
   text-align: center;
   display: block;
   transition: .3s all;
@@ -1445,6 +1445,20 @@ footer{
   }
 }
 
+.ui-menu-item {
+  border: 1px solid red;
+  border-top: 0;
+  width: 170px;
+  background-color: white;
+}
+
+.ui-selectmenu-menu .ui-menu {
+  overflow: auto;
+  overflow-x: hidden;
+  padding-bottom: 1px;
+  margin-top: 0;
+}
+
 .filtr__block{
   width: 920px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.41);
@@ -1556,28 +1570,14 @@ footer{
   width: 100%;
 }
 
-.filtr__block__content-select{
+.filtr__block__content-select {
   margin-top: 20px;
 }
 
-.filtr-current{
+.filtr-current {
   border: 1px solid #927b6f;
   color: #927b6f;
   background: #e3d5d5;
-}
-
-.ui-menu .ui-menu-item {
-  border: 1px solid red;
-  border-top: 0;
-  width: 170px;
-  background-color: white;
-}
-
-.ui-selectmenu-menu .ui-menu {
-  overflow: auto;
-  overflow-x: hidden;
-  padding-bottom: 1px;
-  margin-top: 0;
 }
 
 .filtr__block__clrs{
@@ -1731,6 +1731,444 @@ footer{
   vertical-align: top;
   margin: 20px 0;
 }
+
+.metkarta{
+  width: 895px;
+  .h3-name{
+    color: #363636;
+    font-family: Tahoma;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+    span{
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+}
+
+.metkarta__content__item{
+  display: inline-block;
+  vertical-align: top;
+  h6{
+    color: #6b696a;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.metkarta__content__item1{
+  width: 350px;
+}
+
+.metkarta__content__slider{
+  .met-slider_a-prev{
+    background-image: url("../img/icons/arrowshop-left.png");
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: -36px;
+  }
+  .met-slider_a-next{
+    background-image: url("../img/icons/arrowshop-right.png");
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: -36px;
+  }
+}
+
+.metkarta__content__slider{
+  width: 295px;
+  margin: 0 auto;
+  position: relative;
+  p{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    width: auto;
+  }
+}
+
+.metkarta__content__item__block{
+  width: 240px;
+  background-color: #d2cac7;
+  position: relative;
+  padding: 2px 4px;
+  margin-bottom: 15px;
+  .icon-plus-karta{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+  }
+  h4{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  h3{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+.metkarta__content{
+  margin-top: 25px;
+}
+
+.metkarta__content__item__block-left{
+  display: inline-block;
+  vertical-align: top;
+  p{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 7px 0;
+    display: inline-block;
+    width: 119px;
+  }
+}
+
+.metkarta__content__item__block-mod{
+  display: inline-block;
+  vertical-align: top;
+  .ui-selectmenu-button.ui-button {
+    width: 99px;
+    height: 24px;
+    border: 1px solid #aeaeae;
+    background-color: #ffffff;
+    padding: 3px 5px;
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: top;
+    &:focus{
+      outline-color: black;
+    }
+    &:after{
+      background-image: url("../img/icons/selectred.png");
+      top: 8px;
+      right: 2px;
+    }
+  }
+  .p-mod{
+    color: #585757;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: 400;
+    width: 50px;
+  }
+}
+
+.highlight{
+  .ui-menu-item {
+    border: 1px solid black;
+    border-top: 0;
+    width: 99px;
+    background-color: white;
+  }
+}
+
+.metkarta__content__item__block-mod2{
+  p{
+    width: 62px;
+  }
+  .p-mod{
+    width: 215px;
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .ui-selectmenu-button.ui-button{
+    margin-top: 6px;
+  }
+}
+
+.metkarta-count{
+  width: 57px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 0;
+  margin-left: 2px;
+  i{
+    margin: -2px 0;
+  }
+  span{
+    color: #9c3143;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  .span-mod{
+    border: 1px solid #898989;
+    text-decoration: none;
+    padding: 1px 9px;
+  }
+}
+
+.metkarta__content__item__block__clr{
+  width: 34px;
+  height: 22px;
+  display: inline-block;
+  margin: 0;
+  border: 2px solid transparent;
+  position: relative;
+  border-radius: 2px;
+  &:hover{
+    border: 2px solid #901d3e;
+    transition: .3s all;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.metkarta__content__item__panel-block{
+  text-align: center;
+  margin-top: 64px;
+  .metkarta__content__item__block{
+    margin-bottom: 29px;
+  }
+  .karta-active{
+    border: 2px solid #901d3e;
+  }
+}
+
+.metkarta__content__item2{
+  margin-left: 10px;
+}
+
+.metkarta__content__item3{
+  width: 279px;
+  margin-left: 8px;
+  h1{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 3px 0;
+  }
+  h5{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+  }
+  .metkarta-count{
+    margin: 0;
+    margin-left: 2px;
+    width: auto;
+  }
+  .p-bold{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .p-price{
+    color: #9c3143;
+    font-family: Tahoma;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+  }
+}
+
+.metkarta__content__price{
+  margin: 10px 0;
+}
+
+.btn-yellow{
+  width: 91px;
+  height: 57px;
+  background-color: #ffdb77;
+  color: #363636;
+  font-family: Tahoma;
+  font-size: 17px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: top;
+  transition: .3s all;
+  padding: 4px 13px;
+  &:hover{
+    color: #363636;
+    background-color: darken(#ffdb77, 5);
+  }
+}
+
+.btn-blue{
+  width: 175px;
+  height: 57px;
+  background-color: #a0c0c1;
+  color: #ffffff;
+  font-family: Tahoma;
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: top;
+  transition: .3s all;
+  text-align: center;
+  padding: 3px 0;
+  &:hover{
+    color: #ffffff;
+    background-color: darken(#a0c0c1, 5);
+  }
+  span{
+    display: inline-block;
+    vertical-align: top;
+    width: 86px;
+  }
+  i{
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0;
+  }
+}
+
+.metkarta__content__btns{
+  text-align: center;
+  margin: 10px 0;
+  a{
+    margin: 0 1px;
+  }
+  .btn-like{
+    margin: 20px 0;
+  }
+}
+
+.btn-like{
+  width: 145px;
+  height: 33px;
+  border: 2px dotted #9c3143;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 400;
+  transition: .3s all;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0;
+  transition: .3s all;
+  &:hover{
+    color: #000000;
+    background-color: #e3d5d5;
+    border: 2px solid #9c3143;
+  }
+  span{
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px 0px;
+  }
+  i{
+    display: inline-block;
+    vertical-align: top;
+    margin: 4px 1px;
+  }
+}
+
+.btn-zamer{
+  background-color: #7a7978;
+  margin-bottom: 10px;
+  &:hover{
+    background-color: darken(#7a7978, 5);
+  }
+}
+
+.metkarta__content__btns2{
+  text-align: center;
+  a{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    width: 243px;
+    height: 43px;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    transition: .3s all;
+    span{
+      display: inline-block;
+      vertical-align: top;
+      padding: 13px 0;
+    }
+    i{
+      display: inline-block;
+      vertical-align: top;
+      margin: 4px 10px;
+    }
+  }
+}
+
+.btn-bloknot{
+  background-color: #e39c99;
+  &:hover{
+    background-color: darken(#e39c99, 5);
+  }
+}
+
+.metkarta__content__bot-line{
+  width: 880px;
+  background-color: #7a7978;
+  margin-bottom: 25px;
+  a{
+    width: 147px;
+    height: 55px;
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s all;
+    position: relative;
+    &:hover{
+      background-color: #fff;
+      color: #363636;
+    }
+  }
+}
+
+.metkarta-margin{
+  margin-top: 40px;
+}
+
+
+
 
 
 
