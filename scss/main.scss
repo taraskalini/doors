@@ -2025,6 +2025,9 @@ footer{
     color: #363636;
     background-color: darken(#ffdb77, 5);
   }
+  &:focus{
+    color: #363636;
+  }
 }
 
 .btn-blue{
@@ -2043,6 +2046,9 @@ footer{
   &:hover{
     color: #ffffff;
     background-color: darken(#a0c0c1, 5);
+  }
+  &:focus{
+    color: #ffffff;
   }
   span{
     display: inline-block;
@@ -2083,6 +2089,9 @@ footer{
     color: #000000;
     background-color: #e3d5d5;
     border: 2px solid #9c3143;
+  }
+  &:focus{
+    color: #000000;
   }
   span{
     display: inline-block;
@@ -2159,6 +2168,28 @@ footer{
     &:hover{
       background-color: #fff;
       color: #363636;
+      box-shadow: 0px -4px 8px -2px rgba(0,0,0,0.5);
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 30px;
+      background-color: #f9f7f5;
+      right: 1px;
+      top: 12px;
+    }
+    &:after{
+      width: 1px;
+      height: 100%;
+      display: inline-block;
+      content: "";
+      vertical-align: middle;
+    }
+    span{
+      width: 139px;
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }
@@ -2166,6 +2197,31 @@ footer{
 .metkarta-margin{
   margin-top: 40px;
 }
+
+.bot-line-active{
+  background-color: #fff;
+  color: #363636!important;
+  box-shadow: 0px -4px 8px -2px rgba(0,0,0,0.5);
+}
+
+.metkarta__content__item__photo{
+  text-align: center;
+}
+
+.lamkarta{
+  .metkarta__content__item1 {
+    width: 261px;
+    .metkarta__content__slider{
+      width: 192px;
+    }
+  }
+}
+
+
+
+
+
+
 
 
 

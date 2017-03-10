@@ -1824,6 +1824,54 @@ $(function() {
         });
     });
 
+    $(document).ready(function() {
+        var lamSlider = $('#lam-slider').lightSlider({
+            item:2,
+            loop:true,
+            slideMove:1,
+            slideMargin: 5,
+            pager: false,
+            controls: false,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            responsive : [
+                {
+                    breakpoint:900,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:680,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:500,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".lam-slider-Prev1").on("click",function(e){
+            e.preventDefault();
+            lamSlider.goToPrevSlide();
+        });
+
+        $(".lam-slider-Next1").on("click",function(e){
+            e.preventDefault();
+            lamSlider.goToNextSlide();
+        });
+
+    });
+
 });
 
 //Форма отправки 2.0
