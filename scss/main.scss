@@ -1461,10 +1461,12 @@ footer{
 
 .filtr__block{
   width: 920px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.41);
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.41);
   background-color: #fafbf6;
   display: none;
   padding: 10px 20px;
+  position: relative;
   &.active{
     display: block;
   }
@@ -1599,7 +1601,9 @@ footer{
   display: inline-block;
   vertical-align: top;
   position: relative;
+  -webkit-transition: .1s all;
   transition: .1s all;
+  background-size: cover;
   &:hover{
     border-color: #d33a33;
   }
@@ -1611,19 +1615,20 @@ footer{
 
 .filtr__block__clrs__item-tbl{
   width: 90px;
-  height: 23px;
   background-color: white;
   color: #363636;
   font-family: Tahoma;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
-  top: -33px;
+  bottom: 30px;
   left: 0;
-  box-shadow: 0 3px 9px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.7);
   padding-left: 5px;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: .3s all;
   transition: .3s all;
   &:after{
     content: '';
@@ -1684,14 +1689,18 @@ footer{
   font-weight: 700;
   line-height: 15px;
   text-transform: uppercase;
-  background-image: url(../img/raster/btn-filtr.png);
+  background-image: url(/bitrix/templates/doors/css/../img/raster/btn-filtr.png);
   display: inline-block;
   text-align: center;
   background-repeat: no-repeat;
-  padding: 13px 0;
-  width: 170px;
-  height: 51px;
+  background-position: center 10px;
+  padding: 0px 0;
+  width: 172px;
+  height: 65px;
   margin: 10px 20px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
 }
 
 .btn-reset{
@@ -1701,6 +1710,9 @@ footer{
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
+  background: none;
+  outline: 0;
+  border: 0;
 }
 
 .filtr__block__content-select__block{
@@ -1828,6 +1840,7 @@ footer{
     text-align: left;
     margin-left: 4px;
     margin-bottom: 4px;
+    margin-top: 0;
   }
 }
 

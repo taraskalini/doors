@@ -1272,7 +1272,8 @@ footer {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.41);
   background-color: #fafbf6;
   display: none;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  position: relative; }
   .filtr__block.active {
     display: block; }
   .filtr__block h4 {
@@ -1396,7 +1397,8 @@ footer {
   vertical-align: top;
   position: relative;
   -webkit-transition: .1s all;
-  transition: .1s all; }
+  transition: .1s all;
+  background-size: cover; }
   .filtr__block__clrs__item:hover {
     border-color: #d33a33; }
   .filtr__block__clrs__item:hover .filtr__block__clrs__item-tbl {
@@ -1405,14 +1407,13 @@ footer {
 
 .filtr__block__clrs__item-tbl {
   width: 90px;
-  height: 23px;
   background-color: white;
   color: #363636;
   font-family: Tahoma;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
-  top: -33px;
+  bottom: 30px;
   left: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.7);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.7);
@@ -1469,14 +1470,18 @@ footer {
   font-weight: 700;
   line-height: 15px;
   text-transform: uppercase;
-  background-image: url(../img/raster/btn-filtr.png);
+  background-image: url(/bitrix/templates/doors/css/../img/raster/btn-filtr.png);
   display: inline-block;
   text-align: center;
   background-repeat: no-repeat;
-  padding: 13px 0;
-  width: 170px;
-  height: 51px;
-  margin: 10px 20px; }
+  background-position: center 10px;
+  padding: 0px 0;
+  width: 172px;
+  height: 65px;
+  margin: 10px 20px;
+  background-color: transparent;
+  border: 0;
+  outline: 0; }
 
 .btn-reset {
   color: #065567;
@@ -1484,7 +1489,10 @@ footer {
   font-size: 19px;
   font-weight: 400;
   line-height: 18px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  background: none;
+  outline: 0;
+  border: 0; }
 
 .filtr__block__content-select__block {
   display: inline-block;
@@ -1592,7 +1600,8 @@ footer {
     text-transform: uppercase;
     text-align: left;
     margin-left: 4px;
-    margin-bottom: 4px; }
+    margin-bottom: 4px;
+    margin-top: 0; }
 
 .metkarta__content {
   margin-top: 25px; }
