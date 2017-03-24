@@ -1872,6 +1872,53 @@ $(function() {
 
     });
 
+    $(document).ready(function() {
+        var formSlider = $('#slider-exmpl').lightSlider({
+            item:5,
+            loop:true,
+            slideMove:1,
+            pager: false,
+            controls: false,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            responsive : [
+                {
+                    breakpoint:900,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:680,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:500,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+
+        $(".exmplslider-aPrev").on("click",function(e){
+            e.preventDefault();
+            formSlider.goToPrevSlide();
+        });
+
+        $(".exmplslider-aNext").on("click",function(e){
+            e.preventDefault();
+            formSlider.goToNextSlide();
+        });
+
+    });
+
 });
 
 //Форма отправки 2.0
