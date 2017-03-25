@@ -48,7 +48,7 @@
 
 .field {
     position: relative;
-    float: left;
+    display: inline-block;
     .allert{
         .fa-exclamation-triangle{
             display: block;
@@ -58,6 +58,11 @@
             height: 25px;
         }
     }
+}
+
+.field1{
+    width: 189px;
+    margin: 0 20px;
 }
 
 .jb_input .field {

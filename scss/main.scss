@@ -2364,7 +2364,6 @@ footer{
     border: 1px solid #e39c99;
     background-image: linear-gradient(to top, #fafbf6 0%, #f3f3f2 100%);
     padding-left: 10px;
-    margin-left: 15px;
     &:focus{
       outline-color: red;
     }
@@ -2485,8 +2484,7 @@ footer{
     width: 700px;
     margin: 30px auto;
     input{
-      width: 189px;
-      margin: 0 20px;
+      width: 100%;
     }
   }
 }
@@ -2505,6 +2503,8 @@ footer{
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
       border: 1px solid #e39c99;
       background-image: linear-gradient(to top, #fafbf6 0%, #f3f3f2 100%);
+      outline-color: red;
+      padding-left: 5px;
     }
   }
 }
@@ -2570,7 +2570,7 @@ footer{
   padding: 14px 40px;
 }
 
-.exmplslider-aPrev{
+.exmplslider-aPrev-overall{
   width: 30px;
   height: 56px;
   background-repeat: no-repeat;
@@ -2581,7 +2581,7 @@ footer{
   left: 5px;
 }
 
-.exmplslider-aNext{
+.exmplslider-aNext-overall{
   width: 30px;
   height: 56px;
   background-repeat: no-repeat;
@@ -2591,6 +2591,99 @@ footer{
   margin-top: -29px;
   right: 5px;
 }
+
+.container-block_mod{
+  display: inline-block;
+  vertical-align: top;
+  width: 205px;
+  margin-left: 15px;
+  h6{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 12px;
+  }
+}
+
+.container-block_mod__block{
+  input{
+    width: 105px;
+    height: 35px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e39c99;
+    background-image: linear-gradient(to top, #fafbf6 0%, #f3f3f2 100%);
+    outline-color: red;
+    padding-left: 5px;
+  }
+  span{
+    color: #363636;
+    font-family: Tahoma;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+.container-block_mod__block{
+  margin-bottom: 41px;
+  margin-top: 7px;
+}
+
+.container-block2{
+  margin-left: 0;
+}
+
+.span1{
+  width: 65px;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.span2{
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.radio-btns__item{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 14px;
+  margin: 0 5px;
+  p{
+    width: 100%;
+  }
+  label{
+    cursor: pointer;
+    input{
+      display: none;
+    }
+    span{
+      width: 14px;
+      height: 14px;
+      border: 1px solid #e39c99;
+      background-color: #ffffff;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    input:checked + span{
+      background-color: #e39c99;
+    }
+  }
+}
+
+.block-clrs{
+  width: 100px;
+  .filtr__block__clrs__item{
+    margin: 2px 0;
+  }
+}
+
+
+
+
+
+
 
 
 

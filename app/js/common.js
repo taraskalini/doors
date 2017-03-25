@@ -1873,7 +1873,7 @@ $(function() {
     });
 
     $(document).ready(function() {
-        var formSlider = $('#slider-exmpl').lightSlider({
+        var formSlider = $('.slider-exmpl1').lightSlider({
             item:5,
             loop:true,
             slideMove:1,
@@ -1907,12 +1907,12 @@ $(function() {
             ]
         });
 
-        $(".exmplslider-aPrev").on("click",function(e){
+        $(".exmplslider-aPrev-overall").on("click",function(e){
             e.preventDefault();
             formSlider.goToPrevSlide();
         });
 
-        $(".exmplslider-aNext").on("click",function(e){
+        $(".exmplslider-aNext-overall").on("click",function(e){
             e.preventDefault();
             formSlider.goToNextSlide();
         });
