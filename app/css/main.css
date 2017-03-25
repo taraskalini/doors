@@ -2312,7 +2312,7 @@ footer {
       background-color: #e39c99; }
 
 .block-clrs {
-  width: 100px; }
+  width: 105px; }
   .block-clrs .filtr__block__clrs__item {
     margin: 2px 0; }
 
@@ -2349,9 +2349,31 @@ footer {
     background-color: #e39c99; }
 
 .filtr__block_mod3 .filtr__block__content-select__block {
-  margin-right: 11px;
+  margin-right: 10px;
   margin-top: 5px;
   margin-bottom: 15px; }
+
+.container-block3 {
+  width: 180px; }
+
+.file {
+  width: 170px;
+  height: 35px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e39c99;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fafbf6), to(#f3f3f2));
+  background-image: -webkit-linear-gradient(bottom, #fafbf6 0%, #f3f3f2 100%);
+  background-image: linear-gradient(to top, #fafbf6 0%, #f3f3f2 100%);
+  display: block;
+  color: #626161;
+  font-family: "PTSans";
+  font-size: 14px;
+  font-style: italic;
+  padding: 7px 8px; }
+
+.container-block_m {
+  margin-left: 76px; }
 
 @media only screen and (max-width: 1230px) {
   .main-mnu {
