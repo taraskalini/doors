@@ -2246,7 +2246,7 @@ footer {
   display: inline-block;
   vertical-align: top;
   width: 205px;
-  margin-left: 15px; }
+  margin-left: 14px; }
   .container-block_mod h6 {
     color: #363636;
     font-family: Tahoma;
@@ -2315,6 +2315,43 @@ footer {
   width: 100px; }
   .block-clrs .filtr__block__clrs__item {
     margin: 2px 0; }
+
+.filtr__block_mod2 h6 {
+  height: 40px; }
+
+.input-big {
+  width: 100%;
+  height: 35px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e39c99;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fafbf6), to(#f3f3f2));
+  background-image: -webkit-linear-gradient(bottom, #fafbf6 0%, #f3f3f2 100%);
+  background-image: linear-gradient(to top, #fafbf6 0%, #f3f3f2 100%);
+  padding-left: 5px;
+  outline-color: red; }
+
+.class-radio label {
+  cursor: pointer;
+  text-align: center;
+  margin-left: 60px; }
+  .class-radio label input {
+    display: none; }
+  .class-radio label span {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #e39c99;
+    background-color: #ffffff;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    display: inline-block; }
+  .class-radio label input:checked + span {
+    background-color: #e39c99; }
+
+.filtr__block_mod3 .filtr__block__content-select__block {
+  margin-right: 11px;
+  margin-top: 5px;
+  margin-bottom: 15px; }
 
 @media only screen and (max-width: 1230px) {
   .main-mnu {
@@ -2867,6 +2904,9 @@ footer {
 .field1 {
   width: 189px;
   margin: 0 20px; }
+
+.field2 {
+  width: 192px; }
 
 .jb_input .field {
   width: 100%; }
