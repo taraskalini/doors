@@ -2166,7 +2166,7 @@ footer{
 .metkarta__content__bot-line{
   width: 880px;
   background-color: #7a7978;
-  margin-bottom: 25px;
+  margin: 25px 0;
   a{
     width: 147px;
     height: 55px;
@@ -2755,6 +2755,9 @@ footer{
       width: 310px;
     }
   }
+  .metkarta__content__item2{
+    margin-left: 0;
+  }
   .metkarta__content__slider{
     .met-slider_a-prev{
       margin-top: -16px;
@@ -2922,6 +2925,114 @@ footer{
     width: 86px;
   }
 }
+
+.laminat-props__row{
+  background-color: #d2cac7;
+  &:nth-child(2n){
+    background-color: #e1dcda;
+    .laminat-props__col{
+      height: 18px;
+      line-height: 18px;
+    }
+  }
+  &:nth-child(2n+1){
+    .laminat-props__col{
+      height: 24px;
+      line-height: 25px;
+    }
+  }
+
+}
+
+.laminat-props__col{
+  width: 160px;
+  float: left;
+  position: relative;
+  color: #363636;
+  font-family: Tahoma;
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 4px;
+  &:nth-child(1){
+    border-right: 1px solid white;
+  }
+}
+
+.lamkarta{
+  .metkarta__content__item2{
+    margin-left: 2px;
+  }
+}
+
+.laminat__a{
+  a{
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 45px;
+    box-shadow: 0 5px 5px rgba(1, 1, 0, 0.35);
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #2d2d2d;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 4px;
+    margin-top: 20px;
+    transition: .2s all;
+    &:hover{
+      transform: scale(.9);
+    }
+    i{
+      vertical-align: top;
+    }
+    .icon-plintus{
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+    span{
+      vertical-align: top;
+      display: inline-block;
+      width: 70px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.btn-credit{
+  width: 122px;
+  height: 33px;
+  background-color: #313131;
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  font-family: Tahoma;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px 0;
+  border: 2px solid transparent;
+  transition: .2s all;
+  &:hover{
+    color: #fff;
+    border-color: red;
+  }
+}
+
+.metkarta__content__btns{
+  .btn-credit{
+    margin-top: 20px;
+  }
+}
+
+.metkarta__content__price_mod{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
 
 
 
