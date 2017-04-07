@@ -2113,8 +2113,7 @@ footer {
     font-weight: 700; }
 
 .filtr_mod {
-  width: 863px;
-  margin-left: 0; }
+  width: 863px; }
   .filtr_mod .p-special {
     font-family: Tahoma;
     font-size: 17px;
@@ -2512,11 +2511,20 @@ footer {
     display: inline-block;
     vertical-align: top;
     margin-left: 45px;
-    overflow: visible; }
-  .galka-label input:checked + span {
-    background-repeat: no-repeat;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAACAElEQVQ4T52TO2hTYRTHf+em1NKlQ8VNFxcnmwdWxCX2xiCUIhZx0MXSmxYtiLgI4uJQhE520pgmpbgWipSArbmNi+CSlBaKKIhLcejg+1GS3HskNw+vNUbbD77lnO/7nXP+5xxhD+f+0fiBjoB7B8eYSqwvv5U9MJgJmSnAAh5v9jjndw1JhcxrAtO+4Hd3BUkFY1ERzQLdgAsYoPZ/QzLH4gfdipMHDgMKVP++U5FYE5KMDHWPFxa/t9JoNhrtcj4H5lEGf2VABdFhq7iy6EEeBk8HRZx76urE2Fp+YycoFTYnRblVt3tZqOjtRHFlsmqTZCTWE3DdLMhJhLx82z47+ur5lwYoHTQvqTAHBBo2gfmK8fHieKFQ9iAzYXMW5XLjgSIPrNXcVQHNRAbCritLwH6fDi/LTiB6ZX15qwlNB2MZFR2pP6rZlZGufZ0L26XSU6DfV957FRlMFHMv/CXLXL/ZWy5JFtHjDdEEthTeACd8GVTbYY2u2umdmnnCpkOn+hTDBnp96tdyql0DYdoq2tdbda/Z4nQ4dkFVHwGddVDDJwq5Usk5N7Hx7GtbSNXpa2U1uic8sOm6mGNr9uu/7dlvE+sN1afAAnCmXssPEYatov2k3aL+MfbJSOxQh+suKXIE4aZVtKf+tektdyfdNxBXwxhyjA83GgPVDvQTi426sRKDk+cAAAAASUVORK5CYII=);
-    background-position: 0px -6px; }
+    overflow: visible;
+    position: relative; }
+    .galka-label span:after {
+      position: absolute;
+      top: -6px;
+      left: 1px;
+      content: '';
+      display: block;
+      background-image: url(../img/icons/galkakarta.png);
+      width: 17px;
+      height: 17px;
+      opacity: 0; }
+  .galka-label input:checked + span:after {
+    opacity: 1; }
 
 .metkarta__content__item__block__radio {
   margin: 5px 0; }
@@ -2609,6 +2617,36 @@ footer {
 .metkarta__content__price_mod {
   text-align: center;
   margin-bottom: 20px; }
+
+.p-big {
+  text-transform: uppercase; }
+
+.p-char-normal {
+  color: #363636;
+  font-family: Tahoma;
+  font-size: 14px;
+  font-weight: 400; }
+
+.p-char-big {
+  color: #363636;
+  font-family: Tahoma;
+  font-size: 14px;
+  font-weight: 700 !important;
+  text-decoration: underline; }
+
+.char {
+  margin: 20px 0; }
+
+.metkarta .dveri-sliders__1 h3 {
+  color: #363636;
+  font-family: Tahoma;
+  font-size: 15px;
+  font-weight: 400; }
+
+.p-count {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px; }
 
 @media only screen and (max-width: 1230px) {
   .main-mnu {
