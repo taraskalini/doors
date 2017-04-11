@@ -481,6 +481,11 @@
   text-align: center;
   display: block;
   transition: .3s all;
+  position: relative;
+  &:hover .sale{
+    opacity: 1;
+    visibility: visible;
+  }
   &:hover{
     box-shadow: 0 5px 6px 1px rgba(0, 0, 1, 0.38);
     border: 2px solid #d2cac7;
@@ -790,6 +795,21 @@ footer{
   }
   p{
     width: 780px;
+  }
+  .dveri-sliders__item{
+    p{
+      width: 100%;
+    }
+    h3{
+      color: #363636;
+      font-family: Tahoma;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
   }
 }
 
@@ -1982,12 +2002,16 @@ footer{
 .metkarta__content__item3{
   width: 279px;
   margin-left: 8px;
+  .icon-vnal{
+    margin-left: 20px;
+  }
   h1{
     color: #363636;
     font-family: Tahoma;
     font-size: 22px;
     font-weight: 400;
     margin: 3px 0;
+    display: inline-block;
   }
   h5{
     color: #363636;
@@ -3079,6 +3103,96 @@ footer{
   vertical-align: top;
   margin-top: 6px;
 }
+
+.zapas{
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/icons/zapas.png");
+  width: 68px;
+  height: 45px;
+  margin-top: -20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.podrez{
+  .p-bold{
+    float: left;
+  }
+}
+
+.karta-special{
+  .metkarta__content__item3{
+    width: 300px;
+  }
+}
+
+.ploshad{
+  margin: 20px 0;
+  color: #7a7978;
+  font-family: Tahoma;
+  font-size: 14px;
+  font-weight: 400;
+  span{
+    color: #7a7978;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  input{
+    width: 62px;
+    height: 24px;
+    border: 1px solid #626262;
+    outline: none;
+    text-align: center;
+  }
+}
+
+.news-li{
+  display: block;
+  width: 241px;
+  margin-left: 8px;
+  margin-top: 20px;
+  .news-data{
+    color: #363636;
+  }
+  .news-comment{
+    color: #a18d81;
+    text-decoration: underline;
+    margin-top: 2px;
+  }
+}
+
+.sale{
+  position: absolute;
+  top: 50px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s all;
+  .sale_mod{
+    width: 70px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .sale1{
+    background-color: #e8455c;
+  }
+  .sale2{
+    background-color: #7baba6;
+  }
+  .sale3{
+    background-color: #f7aa05;
+  }
+}
+
+
+
+
+
 
 
 
